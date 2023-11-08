@@ -1,0 +1,74 @@
+manual_prompt_1 = "What is the function of the citation in the sentence? \
+    *Comparison*, *Critique*, *Use*, or *Info* (the priority of Info is the lowest)? \
+    The sentence is:"
+    
+manual_prompt_2 = "Annotate the citation function in the following sentence as either \
+    *Comparison*, *Critique*, *Use*, or *Info* (the priority of Info is the lowest): "
+    
+sys_message="You are a librarian."
+
+context = "Sometimes an author cites with an explicit evaluation purpose,\
+    such as comparison and critique. Sometimes the evaluation purpose is implicit;\
+    for example, if an author cites by saying 'we used the method developed by A', \
+    although there seems no evaluation, the author actually endorsed the method by adopting it.\
+    Despite such explicit and implicit evaluation, many citations do not show any cues for evaluation purpose.\
+    These citations should be annotated as *Info*, \
+    indicating the purpose of the citation is to \
+    simply point readers to some reference(s) for further reading."
+    
+CoT_prompt = "Think step by step"
+
+prompt = "How do you define *Critique* as the purpose of a citation"
+
+gpt_def_critique = "Critique as the purpose of a citation \
+    refers to the use of a citation to critically analyze, \
+    evaluate, or interpret the cited work. This could involve \
+    discussing the strengths and weaknesses of the work, \
+    comparing it to other works on the same topic, \
+    or providing a personal perspective or interpretation."
+    
+gpt_def_critique_2 = "Critique as the purpose of a citation \
+    refers to the use of a citation to critically analyze, \
+    evaluate, or interpret the cited work. This could involve \
+    discussing the strengths and weaknesses of the work, \
+    or providing a personal perspective or interpretation."
+    
+examples of critique citations
+
+For example, some investigators have argued convincingly that pneumococcal vaccination is ineffective in adults and that the apparent benefits in preventing pneumonia in the respective meta-analysis (seemingly larger in less developed countries) are entirely spurious. <xref>76</xref>
+
+"Several clinical criteria and decision tools have been developed to assist clinicians in identifying which febrile children have a serious illness. Unfortunately these have either not been externally validated in independent datasets, do not perform consistently, have insufficient accuracy, or apply only to a limited age range. <xref>8</xref>
+<xref>16</xref>
+<xref>17</xref>
+<xref>18</xref>
+<xref>19</xref>
+<xref>20</xref>"
+
+Importantly the traffic light system missed a sizeable proportion of urinary tract infections. This is a substantial deficiency in a screening tool for serious bacterial infections in febrile young children, given that, after the introduction of pneumococcal conjugate vaccine, the prevalence of occult bacteraemia in febrile children presenting to emergency departments has decreased substantially to somewhere between 0.4% and 0.7%, <xref>28</xref> whereas the prevalence of urinary tract infection in children with fever without a clinically obvious source remains greater than 7%. <xref>29</xref>
+
+"The NICE fever guidelines advise routine testing of urine in all children with fever without apparent source (including those who are in the green zone of the traffic light system), thus helping to avoid missed cases of urinary tract infections, but they do not include this test in the traffic light system itself. <xref>21</xref>
+<xref>30</xref> Based on our findings, we strongly support this recommendation but suggest that urine analysis be added to the traffic light criteria."
+
+"In this context, one can view successful programs aimed at preventing rehospitalization‚Äîsuch as the Care Transitions Program, and the Transitional Care Model‚Äîas attempts to strengthen the support systems and the self care capacity of patients at greatest risk. <xref>33</xref>
+<xref>34</xref>"
+
+The newer starches with molecular weights of 130 kDa and substitution ratios ranging from 0.38 to 0.45 have been claimed to be safer, but the data to support this are insufficient. <xref>4</xref>
+
+"The risk of bias could be fully judged in six trials. <xref>9</xref>
+<xref>10</xref>
+<xref>11</xref>
+<xref>51</xref>
+<xref>53</xref>
+<xref>54</xref> Four of these were judged to be of low risk of bias in all domains, <xref>9</xref>
+<xref>10</xref>
+<xref>51</xref>
+<xref>53</xref> the fifth was sponsored by industry and had potential academic bias, <xref>11</xref> and the sixth had a high risk of bias owing to lack of blinding. <xref>54</xref>"
+
+"Four trials reported serious adverse events, two of which registered these during the entire stay on the intensive care unit. <xref>9</xref>
+<xref>11</xref>
+<xref>53</xref>
+<xref>54</xref> In the 6S trial serious adverse events were restricted to severe bleeding and severe allergic reactions, <xref>9</xref> whereas CRYSTMAS used broad criteria. <xref>11</xref> The last two trials did not specify the definition of serious adverse events, and one of them had zero events in 24 hours follow-up. <xref>54</xref>"
+
+The recent large, well designed trials showed consistent results with no statistical heterogeneity and the findings are likely to be confirmed when further data of the patients with sepsis in the Crystalloid versus Hydroxyethyl Starch (CHEST) trial <xref>10</xref> become available, since the hydroxyethyl starch group in this trial had more use of renal replacement therapy and transfusion with red blood cells and more serious adverse events.
+
+Adjustment methodologies that assume that a diagnosis made in Miami, Manhattan, or Los Angeles contains the same information as one made in Minneapolis, Seattle, or Salt Lake City are guilty of what one author labeled the constant risk fallacy: the assumption that the underlying relations between case mix variables and outcomes are constant across populations or over time. <xref>35</xref>
